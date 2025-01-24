@@ -11,6 +11,8 @@
 - ⚡ **Powered by DuckDB, Intake, and dbt**: Three open-source tools combined to deliver blazing-fast ELT workflows.
 
 DID makes ELT approachable for analysts, engineers, and data enthusiasts alike. It's designed to just get ELT done.
+
+
 ![Just Another Ducking ELT Framework](https://raw.githubusercontent.com/dprovder/DID/refs/heads/main/DALL·E%202025-01-24%2017.28.08%20-%20A%20minimalistic%20and%20cute%20illustration%20of%20a%20group%20of%20ducks%20working%20collaboratively%20around%20a%20table.%20The%20ducks%20are%20cartoonish%20and%20pastel-colored%2C%20with%20sim.webp)
 ---
 
