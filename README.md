@@ -106,25 +106,20 @@ Have questions or feedback? Reach out to us on GitHub or at [**did-support@eltdu
 
 Let’s get ELT done—the ducking way!
 
-# underneath the hood 
+# Underneath the hood 
+## Extracts and Loads raw sources into duckdb
+
 ```
-python
-# Extracts and Loads
+from did.do import extractload
 
-from did.do import extractload, transform
+raw_catalog = extractload('input_cat_file.yml')
+```
+# Tranform
+## Transform raw sources, export materialized tables and views as an intake catalog
+```
+from did.do import transform
 
-## did.do.extractload
-# Extract and Load input catalog with raw sources
-input_cat = intake.from_yaml_file('input_cat_file.yml')
-el_cat = input_cat.CatalogToDuck.read()
-
-## did.do.transform
-# Transform raw sources, export materialized tables and views as an intake catalog
-manifest_data = dbtManifest(url=dbt_manifest_path, metadata={"description": "dbt manifest file"})
-output_cat = dbtManifestReader(manifest_data).dbtManifestToCatalog.read()
-
-# Save
-output_cat.save('output_cat_file.yml')
+output_catalog = transform('path_to_manifest.json')
 ```
 
 
