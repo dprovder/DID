@@ -106,8 +106,6 @@ We’re excited to build DID into the most developer-friendly ELT framework out 
 
 Have questions or feedback? Reach out to us on GitHub or at [**did-support@eltducks.com**](mailto\:did-support@eltducks.com).
 
-Let’s get ELT done—the ducking way!
-
 --
 
 # 👨‍💻 Underneath the hood 
